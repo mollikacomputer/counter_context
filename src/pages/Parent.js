@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { COUNTER_CONTEXT } from "../App";
 
+
 const Parent = () => {
- const {count, setCount} = useContext(COUNTER_CONTEXT);
+  const {count, setCount} = useContext(COUNTER_CONTEXT);
   return (
     <div className="container mx-auto ">
       <div className="grid justify-center">
@@ -10,7 +11,7 @@ const Parent = () => {
         <div className="flex justify-center gap-2">
           <button
             className="btn btn-primary"
-            onClick={()=>setCount(count+1)}
+            onClick={()=> setCount(count+1)}
           >
             increment +
           </button>
