@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
-import { COUNTER_CONTEXT } from "../App";
-
-
+import {COUNTER_CONTEXT} from '../App';
 const Parent = () => {
-  const {count, setCount} = useContext(COUNTER_CONTEXT);
+const {count, setCount} = useContext(COUNTER_CONTEXT)
   return (
     <div className="container mx-auto ">
       <div className="grid justify-center">
@@ -11,24 +9,25 @@ const Parent = () => {
         <div className="flex justify-center gap-2">
           <button
             className="btn btn-primary"
-            onClick={()=> setCount(count+1)}
+            onClick={()=> setCount(prvState=> prvState+1 )}
           >
             increment +
           </button>
           <button
             className="btn btn-secondary"
-            onClick={()=>setCount(count-1)}
+            onClick={()=> setCount(prvState => prvState-1)}
           >
             Decrement -
           </button>
         </div>
-        <h2> This is home page</h2>
+        <h2> Home page practice another time</h2>
+        <h3> Home page practice another time</h3>
       </div>
     </div>
   );
 };
 export default Parent;
-
+// another time practice
 // import React, { useContext } from "react";
 // import { COUNTER_CONTEXT } from "../App";
 
